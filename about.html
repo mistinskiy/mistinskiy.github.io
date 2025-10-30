@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обо мне - Портфолио</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background: url('https://i.ibb.co/nNM5tvsY/IMG-3617.jpg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .content-overlay {
+            background: rgba(0, 0, 0, 0.7);
+            min-height: 100vh;
+            padding: 20px 0;
+        }
+        .navbar {
+            background: rgba(0, 0, 0, 0.8) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        .container {
+            color: white;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .mini-nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .mini-nav-btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        .mini-nav-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            transform: translateY(-2px);
+        }
+        .mini-nav-btn.active {
+            background: rgba(255, 255, 255, 0.4);
+        }
+        .btn-back {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s;
+            border-radius: 25px;
+            padding: 10px 25px;
+        }
+        .btn-back:hover {
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="content-overlay">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fas fa-pizza-slice"></i> Колледж "Царицыно" | ИСП-135
+                </a>
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link btn btn-back" href="index.html">
+                        <i class="fas fa-home"></i> На главную
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mt-4">
+            <h1 class="text-center mb-4"><i class="fas fa-user"></i> Обо мне</h1>
+            
+            <div class="mini-nav">
+                <a href="about.html" class="mini-nav-btn active"><i class="fas fa-user"></i> Обо мне</a>
+                <a href="achievements.html" class="mini-nav-btn"><i class="fas fa-trophy"></i> Достижения</a>
+                <a href="hobby.html" class="mini-nav-btn"><i class="fas fa-gamepad"></i> Увлечения</a>
+                <a href="projects.html" class="mini-nav-btn"><i class="fas fa-code"></i> Проекты</a>
+                <a href="contact.html" class="mini-nav-btn"><i class="fas fa-envelope"></i> Контакты</a>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card p-4 mb-4">
+                        <h3 class="text-primary">Основная информация</h3><p><strong>Имя:</strong> [Степан Тульский]</p>
+                        <p><strong>Возраст:</strong> [16]</p>
+                        <p><strong>Город:</strong> Москва</p>
+                        <p><strong>Учебное заведение:</strong> Колледж "Царицыно"</p>
+                        <p><strong>Группа:</strong> ИСП-135</p>
+                        <p><strong>Специальность:</strong> Информационные системы и программирование</p>
+                    </div>
+                    
+                    <div class="card p-4">
+                        <h3 class="text-primary">Технические навыки</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="fas fa-check text-success"></i> додо</li>
+                            <li class="list-group-item"><i class="fas fa-check text-success"></i> додо</li>
+                            <li class="list-group-item"><i class="fas fa-check text-success"></i> додо</li>
+                            <li class="list-group-item"><i class="fas fa-check text-success"></i> додо</li>
+                            <li class="list-group-item"><i class="fas fa-check text-success"></i> Бд скл</li>
+                            <li class="list-group-item"><i class="fas fa-check text-success"></i> ну пусть гитхаб для приличия</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-4 mb-4">
+                        <h3 class="text-primary">Образование</h3>
+                        <h5 class="text-warning">Колледж "Царицыно"</h5>
+                        <p><strong>Специальность:</strong> 09.02.07 Информационные системы и программирование</p>
+                        <p><strong>Группа:</strong> ИСП-135</p>
+                        <p><strong>Годы обучения:</strong> 2023-2026</p>
+                        <p><strong>Статус:</strong> Студент</p>
+                    </div>
+                    
+                    <div class="card p-4">
+                        <h3 class="text-primary">Профессиональные цели</h3>
+                        <p class="mb-3">Стать управляющим додо</p>
+                        
+                        <h4 class="text-primary mt-4">Ключевые компетенции</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="fas fa-star text-warning"></i> Разработка рецептов</li>
+                            <li class="list-group-item"><i class="fas fa-star text-warning"></i> доод</li>
+                            <li class="list-group-item"><i class="fas fa-star text-warning"></i> бд</li>
+                            <li class="list-group-item"><i class="fas fa-star text-warning"></i> также гитхаб я хз</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

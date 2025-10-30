@@ -1,0 +1,149 @@
+</html><!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Портфолио</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background: url('https://i.ibb.co/nNM5tvsY/IMG-3617.jpg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.7);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .hero-section {
+            color: white;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .hexagon-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin: 50px auto;
+            max-width: 800px;
+        }
+        .hexagon {
+            width: 140px;
+            height: 161px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        .hexagon:hover {
+            transform: scale(1.15) rotate(5deg);
+            z-index: 10;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+        }
+        .hexagon:nth-child(even) {
+            margin-top: 80px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        .hexagon:nth-child(3n) {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        .hexagon:nth-child(4n) {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        }
+        .hexagon:nth-child(5n) {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+        .hex-icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .college-info {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 25px;
+            border-radius: 20px;
+            margin-top: 50px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            max-width: 600px;
+        }
+        .navbar {
+            background: rgba(0, 0, 0, 0.8) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .display-4 {
+            font-weight: bold;
+            margin-bottom: 2rem;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <strong><i class="fas fa-pizza-slice"></i> Портфолио | Колледж "Царицыно"</strong>
+                </a>
+            </div>
+        </nav>
+
+        <section class="hero-section">
+            <div class="container text-center">
+                <h1 class="display-4 mb-5">Интерактивное Портфолио</h1>
+                
+                <div class="hexagon-nav">
+                    <a href="about.html" class="hexagon">
+                        <div class="hex-icon"><i class="fas fa-user"></i></div>
+                        <div>Обо мне</div>
+                    </a>
+                    <a href="achievements.html" class="hexagon">
+                        <div class="hex-icon"><i class="fas fa-trophy"></i></div>
+                        <div>Достижения</div>
+                    </a>
+                    <a href="hobby.html" class="hexagon">
+                        <div class="hex-icon"><i class="fas fa-gamepad"></i></div>
+                        <div>Увлечения</div>
+                    </a>
+                    <a href="projects.html" class="hexagon">
+                        <div class="hex-icon"><i class="fas fa-code"></i></div>
+                        <div>Проекты</div>
+                    </a>
+                    <a href="contact.html" class="hexagon">
+                        <div class="hex-icon"><i class="fas fa-envelope"></i></div>
+                        <div>Контакты</div>
+                    </a>
+                </div>
+
+                <div class="college-info mt-5">
+                    <h4><i class="fas fa-graduation-cap"></i> Колледж "Царицыно"</h4>
+                    <h5>Группа: ИСП-135 | Специальность: Информационные системы и программирование</h5>
+                    <p class="mt-3 mb-0"><i class="fas fa-laptop-code"></i> Учебная практика: Разработка веб-приложений</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
